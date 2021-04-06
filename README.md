@@ -1,12 +1,16 @@
 # Fastify Preact SSR.
 
+Forked from: this [repo](https://github.com/sebringrose/fastify-preact-ssr).
+
+The video is on [YouTube](https://www.youtube.com/watch?app=desktop&v=p8_wOBU478w).
+
 ![lighthouse-score](https://raw.githubusercontent.com/sebringrose/how-to-build/main/public/lighthouse-score.png)
 
 ### Overview:
 
-The **Fastify** app bundle ```src/server.js -> rollup -> build/server.js``` uses ```src/preact/pages/index.js``` to render the html for each page on the server side using **preact-render-to-string** and serve via the correct url path. 
+The **Fastify** app bundle ```src/server.js -> rollup -> build/server.js``` uses ```src/preact/pages/index.js``` to render the html for each page on the server side using **preact-render-to-string** and serve via the correct url path.
 
-The **Preact** bundle (```src/client.js -> rollup -> public/client.js```) is referrenced in the html and once loaded will Hydrate the DOM with all the juicy **Preact** goodness with **preact-router**  ```src/preact/components/Router.js``` to hydrate the correct content for the page. 
+The **Preact** bundle (```src/client.js -> rollup -> public/client.js```) is referrenced in the html and once loaded will Hydrate the DOM with all the juicy **Preact** goodness with **preact-router**  ```src/preact/components/Router.js``` to hydrate the correct content for the page.
 
 ### Commands:
 
