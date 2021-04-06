@@ -23,6 +23,11 @@ export default (html) => `
         <div id="root">
             ${html}
         </div>
+        /**
+         * client bundle 前后端同构，在此之前为纯静态页面，通过 bundle 增加对应事件监听
+         * client bundle 是通过 preact 的 ”hydrate“ 进行构建（src/client.js），
+         * 而常规的客户端渲染时用的是 render
+        */
         <script type="module" src="client.js" async></script>
     </body>
     </html>
